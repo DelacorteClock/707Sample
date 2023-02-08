@@ -1,0 +1,13 @@
+--command-- 'quik' = {ACCESS-FORCE => COMPLETE}/
+
+IF [self ?? location{@MACHINE}] === UNIVERSAL : {quik}/
+
+--command-- 'juice' = {HARDWARE-CONTROL => COMPLETE}/
+
+!IMP juice/
+
+juice % END/
+
+--command-- 'space_explorer' = {@OS BREAK => FORCE^(keyget) COMPLETE}/
+
+!IMP space_explorer/
